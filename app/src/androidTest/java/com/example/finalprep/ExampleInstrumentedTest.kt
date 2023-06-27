@@ -27,7 +27,7 @@ class ExampleInstrumentedTest {
 
     @Test
     fun checkButtonText() {
-        val button = onView(withId(R.id.next))
+        val button = onView(withId(R.id.nextText))
         button.check(matches(withText("Next")))
     }
     @Test
