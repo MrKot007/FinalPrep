@@ -1,5 +1,10 @@
 package com.example.finalprep
 
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.*
+import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 
@@ -7,6 +12,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 import org.junit.Assert.*
+import org.junit.Rule
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -15,10 +21,35 @@ import org.junit.Assert.*
  */
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
+    @JvmField
+    @Rule
+    val scenario = ActivityScenarioRule(MainActivity::class.java)
+
     @Test
-    fun useAppContext() {
-        // Context of the app under test.
-        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.finalprep", appContext.packageName)
+    fun checkButtonText() {
+        val button = onView(withId(R.id.next))
+        button.check(matches(withText("Next")))
+    }
+    @Test
+    fun checkButtonChange() {
+        val button = onView(withId(R.id.next))
+        val buttonToAppear = onView(withId(R.id.signUp))
+        button.perform(click())
+        button.perform(click())
+        buttonToAppear.check(matches(isDisplayed()))
+    }
+    @Test
+    fun checkTransferToRegistration() {
+        val button = onView(withId(R.id.signUp))
+        val reg = onView(withId(R.id.reg))
+        button.perform(click())
+        reg.check(matches(isDisplayed()))
+    }
+    @Test
+    fun checkTransferToEntrance() {
+        val button = onView(withId(R.id.goToSignIn))
+        val enter = onView(withId(R.id.enter))
+        button.perform(click())
+        enter.check(matches(isDisplayed()))
     }
 }

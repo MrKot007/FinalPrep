@@ -4,18 +4,18 @@ import java.util.LinkedList
 import java.util.Queue
 
 class Controller {
-    val queue: Queue<Pair<String, Int>> = LinkedList()
+    val queue: Queue<Triple<String, String, Int>> = LinkedList()
 
     fun getSize(): Int {
         return 0
     }
-    fun getElement(): Pair<String, Int> {
-        return Pair("", 0)
+    fun getElement(): Triple<String, String, Int> {
+        return Triple("", "", 0)
     }
     fun deleteElement() {
 
     }
-    fun addElement(element: Pair<String, Int>) {
+    fun addElement(element: Triple<String, String, Int>) {
 
     }
 }
