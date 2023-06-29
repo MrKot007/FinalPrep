@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="checkBoxStyle">
+        <item name="colorControlNormal">@color/checkBoxColor</item>
+        <item name="colorControlActivated">@color/checkBoxColor</item>
+    </style>
+</resources>
