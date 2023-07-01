@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             binding.signUp.setOnClickListener {
-                saveNotFirstEnter()
                 controller.deleteElement()
                 if (controller.getSize() == 0) {
                     startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
@@ -55,7 +54,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             binding.goToSignIn.setOnClickListener {
-                saveNotFirstEnter()
                 controller.deleteElement()
                 if (controller.getSize() == 0) {
                     startActivity(Intent(this@MainActivity, EnteranceActivity::class.java))
@@ -63,8 +61,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             binding.skip.setOnClickListener {
-                saveNotFirstEnter()
-
                 startActivity(Intent(this@MainActivity, EnteranceActivity::class.java))
             }
         }else {

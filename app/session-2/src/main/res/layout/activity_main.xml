@@ -281,4 +281,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toSignIn" />
 
+    <ImageView
+        android:id="@+id/loginViaGoogleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/akar_icons_google_contained_fillgoogle" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,309 @@
     android:layout_height="match_parent"
     tools:context=".DriverActivity">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="22dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Book a Rider"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/backToDrivers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arrow_square_right" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="Map here"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        app:cardCornerRadius="84dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="1.4dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/driverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="TextView"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/roboto"
+        android:text="Customer Reviews"
+        android:textColor="@color/mainText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driverName"
+        app:srcCompat="@drawable/vectorstar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/driverName"
+        app:srcCompat="@drawable/vectorstar" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/driverName"
+        app:srcCompat="@drawable/vectorstar" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/driverName"
+        app:srcCompat="@drawable/vectorstar" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/driverName"
+        app:srcCompat="@drawable/vectorstar" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/roboto"
+        android:text="TextView"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="TextView"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/regNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="TextView"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:text="Gender"
+        android:textColor="@color/secondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Car Model"
+        android:textColor="@color/secondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Registration Number"
+        android:textColor="@color/secondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reviews"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="View More"
+        android:textColor="@color/primary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviews" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/toChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Send Message"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/toCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Call Rider"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

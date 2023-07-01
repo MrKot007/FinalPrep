@@ -42,6 +42,9 @@ class ExampleInstrumentedTest {
     fun checkTransferToRegistration() {
         val button = onView(withId(R.id.signUp))
         val reg = onView(withId(R.id.reg))
+        val next = onView(withId(R.id.next))
+        next.perform(click())
+        next.perform(click())
         button.perform(click())
         reg.check(matches(isDisplayed()))
     }
@@ -49,6 +52,9 @@ class ExampleInstrumentedTest {
     fun checkTransferToEntrance() {
         val button = onView(withId(R.id.goToSignIn))
         val enter = onView(withId(R.id.enter))
+        val next = onView(withId(R.id.next))
+        next.perform(click())
+        next.perform(click())
         button.perform(click())
         enter.check(matches(isDisplayed()))
     }

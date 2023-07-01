@@ -16,3 +16,4 @@ rootProject.name = "FinalPrep"
 include ':app'
 include ':app:session-2'
 include ':app:session-4'
+include ':app:session-5'
